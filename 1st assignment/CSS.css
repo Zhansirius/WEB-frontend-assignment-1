@@ -1,8 +1,7 @@
-body{
+body {
     margin: 0;
     min-height: 100vh;
     background-color: black;
-    background-image: url('assets/Stalcraft_main.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 
@@ -10,7 +9,73 @@ body{
     display: flex;
     flex-direction: column;
 }
-h1{
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111111;
+    padding: 0 40px;
+    height: 70px;
+}
+
+.navbar nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.btn-login {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.btn-play {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #cc0000;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-play:hover {
+    background-color: #cc0000;
+}
+
+h1 {
     color: white;
     position: relative;
     z-index: 1; 
@@ -20,43 +85,148 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.para{
+
+.para {
     color: white;
     position: relative;
     z-index: 1; 
     margin: 0;
-    padding-top: 50px; 
+    padding-left: 140px;
+    padding-top: 100px; 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    font-size: larger;
+    font-size: 150%;
 }
-footer{
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+#Donate {
+    border-collapse: collapse;
+    width: max-content;
+    margin: 0;
+}
+
+.side-image {
+    width: 700px;
+    height: auto;
+    border: 1px solid white;
+}
+
+th {
+    border: 1px solid white;
+    padding: 12px 24px;
+    text-align: left;
+    color: white;
+}
+
+th a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
     color: white;
     position: relative;
     z-index: 1;
     margin-top: auto;
     padding: 15px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-a{
-    
-}
-table{
-    border-collapse: collapse;
-    position: relative;
-    z-index: 1;
-    width: auto;
-    margin: 20px auto;
-}
-th {
-    border: 1px solid white;
-    padding: 12px 24px;
-    text-align: left;
+    background-color: rgba(38, 38, 38, 0.5);
 }
 
-th a {
-    color: white;
-    text-decoration: none;
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/Rain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#main h1 {
+    z-index: 2;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0 0 10px 0;
+}
+#main p {
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    max-width: 600px;
+}
+.features-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.features-content {
+    flex: 1;
+    color: #ffffff;
+}
+
+.features-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.features-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #cccccc;
+}
+
+.features-image {
+    flex: 1;
+}
+
+.features-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    object-fit: cover;
 }
