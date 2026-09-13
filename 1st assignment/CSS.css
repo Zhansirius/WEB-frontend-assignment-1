@@ -230,3 +230,180 @@ footer {
     display: block;
     object-fit: cover;
 }
+
+/* CSS Shakhriyar Part */
+
+/* StalCalc */
+
+.stalcalc-page .calculator {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90vw;
+    margin: 40px auto;
+    gap: 30px;
+}
+
+.stalcalc-page .calculator-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 220px;
+}
+
+.stalcalc-page .calculator-options select {
+    width: 210px;
+    height: 40px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.stalcalc-page .calculator-image {
+    width: 450px;
+    flex-shrink: 0;
+}
+
+.stalcalc-page .calculator-image img {
+    width: 100%;
+    height: auto;
+}
+
+.stalcalc-page .characteristics {
+    width: 250px;
+    flex-shrink: 0;
+    color: white;
+}
+
+.stalcalc-page .characteristics h3 {
+    text-align: center;
+}
+
+.stalcalc-page .characteristics ul {
+    padding-left: 30px;
+}
+
+.stalcalc-page .characteristics li {
+    margin-bottom: 12px;
+}
+
+.stalcalc-page p {
+    color: white;
+}
+
+.stalcalc-page h4 {
+    color: white;
+}
+
+.stalcalc-page ol {
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* InteractiveMap Page */
+
+.stalcalc-page .map-section {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.stalcalc-page .game-map {
+    width: 90vw;
+    max-width: 1200px;
+    height: auto;
+    border: 2px solid white;
+    display: block;
+    margin: 20px auto;
+}
+
+.stalcalc-page .map-list {
+    color: white;
+    width: fit-content;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+.stalcalc-page .map-table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    color: white;
+}
+
+.stalcalc-page .map-table th,
+.stalcalc-page .map-table td {
+    border: 1px solid white;
+    padding: 12px 20px;
+}
+
+.stalcalc-page .map-table th {
+    background-color: #222222;
+}
+
+.stalcalc-page .team-section {
+    width: 80%;
+    margin: 50px auto;
+    color: white;
+}
+
+.stalcalc-page .team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stalcalc-page .profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.stalcalc-page .team-member p {
+    max-width: 500px;
+    color: #cccccc;
+}
+
+.stalcalc-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    max-width: 80%;
+    margin: 30px auto 60px;
+    color: white;
+}
+
+.stalcalc-page .contact-form input,
+.stalcalc-page .contact-form select,
+.stalcalc-page .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #555555;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.stalcalc-page .contact-form input:focus,
+.stalcalc-page .contact-form select:focus,
+.stalcalc-page .contact-form textarea:focus {
+    border-color: #5c42ed;
+    outline: none;
+}
+
+.stalcalc-page .contact-form button {
+    padding: 12px;
+    border: 1px solid #cc0000;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.stalcalc-page .contact-form button:hover {
+    background-color: #cc0000;
+}
